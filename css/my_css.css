@@ -1,0 +1,21 @@
+#self-intro{
+    display: grid;
+    border: 5px solid gold;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-items: center;
+    background-color: black;
+}
+#self-intro img{
+    max-width: 50%;
+}
+#my-name{
+    color: white;
+    grid-column: 2/3;
+}
+footer{
+    text-align: center;
+}
+nav ul{
+    display: flex;
+}

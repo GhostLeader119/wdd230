@@ -15,7 +15,10 @@
 }
 footer{
     text-align: center;
+    border: 5px solid red;
+
+
 }
-nav ul{
+nav{
     display: flex;
 }

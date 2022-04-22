@@ -1,5 +1,5 @@
 function set_time() {
-    console.log('System Check: last_modification called');
+    console.log('System Check: set_time called');
     const date_time = new Date();
     const current_month = date_time.getDay()
     const current_day = date_time.getDate()

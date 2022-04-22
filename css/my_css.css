@@ -19,6 +19,7 @@ footer{
 
 
 }
-nav{
-    display: flex;
+main {
+    display: grid;
+    justify-items: center;
 }

@@ -2,17 +2,19 @@
     margin-left: 20px;
     margin-right: 20px;
 }
+h1,h2,h3{
+    font-family: 'Noto Sans', sans-serif;
+}
 #self-intro{
-    display: grid;
+    display: block;
     border: 5px solid gold;
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: auto;
-    justify-items: center;
+    text-align: center;
     background-color: black;
 }
 #my-name{
     color: white;
     grid-column: 2/3;
+
 }
 footer{
     text-align: center;

@@ -1,0 +1,10 @@
+@media (min-width: 32.5em) {
+    #self-intro {
+    display: grid;
+    border: 5px solid gold;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    background-color: black;
+}
+}

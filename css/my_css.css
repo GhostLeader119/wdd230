@@ -5,6 +5,9 @@
 h1,h2,h3{
     font-family: 'Noto Sans', sans-serif;
 }
+nav {
+    text-align: center;
+}
 #self-intro{
     display: block;
     border: 5px solid gold;
@@ -16,6 +19,9 @@ h1,h2,h3{
     grid-column: 2/3;
 
 }
+header{
+    text-align: center;
+}
 footer{
     text-align: center;
     border: 5px solid red;
@@ -25,4 +31,22 @@ footer{
 main {
     display: grid;
     justify-items: center;
+}
+nav a {
+    color: black;
+    font-size: 1.1em ;
+    background-color:white;
+    border-radius: 50px 50px 50px 50px;
+    padding: 0.4em;
+    border: 1px solid black;
+}
+nav a:hover {color:white; background-color:orange;}
+.design-principles-content {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#design-principles-main{
+    display: grid;
+    grid-template-columns: repeat(auto, minmax(300px,1fr));
 }

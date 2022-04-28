@@ -44,9 +44,12 @@ nav a:hover {color:white; background-color:orange;}
 .design-principles-content {
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
+    border: 3px dashed black;
 }
 #design-principles-main{
     display: grid;
-    grid-template-columns: repeat(auto, minmax(300px,1fr));
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }

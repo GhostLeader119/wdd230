@@ -43,6 +43,7 @@ nav a {
 nav a:hover {color:white; background-color:orange;}
 .design-principles-content {
     text-align: center;
+    justify-items: center;
     display: grid;
     grid-template-columns: auto;
     border: 3px dashed black;
@@ -52,4 +53,21 @@ nav a:hover {color:white; background-color:orange;}
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+.design-principles-content img{
+    margin-top: 0.3em;
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 1024px){
+    #design-principles-main{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+}
+@media (max-width: 580px){
+    #design-principles-main{
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+    }
 }

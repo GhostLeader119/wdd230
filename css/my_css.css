@@ -56,6 +56,8 @@ nav a:hover {color:white; background-color:orange;}
 }
 .design-principles-content img{
     margin-top: 0.3em;
+    margin-left: 4px;
+    margin-right: 4px;
     max-width: 100%;
     height: auto;
 }

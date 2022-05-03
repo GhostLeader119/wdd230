@@ -63,6 +63,10 @@ nav a:hover {color:white; background-color:orange;}
 }
 .website-plan {
     display: flex;
+    background-color:none;
+    border-radius: none;
+    padding: 0.4em;
+    border: none;
 }
 @media (max-width: 1024px){
     #design-principles-main{
@@ -74,5 +78,8 @@ nav a:hover {color:white; background-color:orange;}
     #design-principles-main{
         grid-template-columns: 1fr;
         grid-gap: 1em;
+    }
+    .website-plan {
+        display: block;
     }
 }

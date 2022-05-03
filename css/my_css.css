@@ -68,6 +68,12 @@ nav a:hover {color:white; background-color:orange;}
     padding: 0.4em;
     border: none;
 }
+#typography-main h1,h2,h3,h4,h5 {
+    font-family: Garamond, Georgia, serif;
+}
+#typography-main p{
+    font-family: Helvetica, sans-serif;
+}
 @media (max-width: 1024px){
     #design-principles-main{
         grid-template-columns: 1fr 1fr;

@@ -15,7 +15,14 @@ function get_date(){
     document.querySelector('#time-date').textContent = current_date
     console.log('Ending [get_date()]...');
 }
+function set_year() {
+    console.log('System Check: set_time called');
+    const date_time = new Date();
+    const current_year = date_time.getFullYear()
+    document.querySelector('.year').textContent = current_year
+}
 get_date()
+set_year()
 const x = document.getElementById('navBtn')
 
 x.onclick = toggleMenu;

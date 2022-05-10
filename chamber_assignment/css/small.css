@@ -1,0 +1,70 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,h2,h3,h4,h5{
+    font-family: Garamond, Georgia, serif;
+}
+p {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+header {
+    padding: .5em;
+    background-color: #1ADBBB;
+}
+header img {
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+nav {
+    display:flex;
+}
+nav p {
+    text-align: right;
+    flex: 1 1 auto
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav button {
+    margin:  .2rem 2vw;
+    background: transparent;
+    border: 1px solid white;
+    font-size: 2rem;
+    color: white;
+}
+nav button:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+nav ul li a{
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #333;
+    border-top: 1px solid rgba(0, 0, 0, .5);
+}
+nav li a:hover{
+    background-color: rgba(0, 0, 0, .3);
+}
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, .2);
+    color: #fff;
+}
+
+nav ul {
+    display: none;
+}
+nav ul.open {
+    display: block;
+}
+#expiriment-to-reset-nav.open {display: block;}
+#navBtn span:nth-child(1) {display: block;}
+#navBtn span:nth-child(2) {display: none;}
+
+#navBtn.open span:nth-child(1) {display: none;}
+#navBtn.open span:nth-child(2) {display: block;}

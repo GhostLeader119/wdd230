@@ -50,7 +50,7 @@ nav ul li a{
     display: block;
     padding: .8rem 2vw;
     text-decoration: none;
-    color: #333;
+    color: rgb(254, 254, 254);
     border-top: 1px solid rgba(0, 0, 0, .5);
 }
 nav li a:hover{
@@ -73,3 +73,17 @@ nav ul.open {
 
 #navBtn.open span:nth-child(1) {display: none;}
 #navBtn.open span:nth-child(2) {display: block;}
+
+footer {
+    background-color: #1ADBBB;
+    padding: 5px;
+}
+
+footer img {
+    max-width: 150px;
+    height: auto;
+}
+.footer-zone-1 {
+    display: block;
+    text-align: center;
+}

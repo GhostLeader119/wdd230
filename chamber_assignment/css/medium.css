@@ -1,4 +1,4 @@
-@media only screen and (win-width: 35rem) {
+@media only screen and (min-width: 32.5em) {
     nav button{
         display: none;
     }
@@ -9,6 +9,16 @@
     }
     nav ul li a {
         border: none;
-        border-right: 1 px solid rgba(0, 0, 0, 0.3);
+    }
+    .footer-zone-1 {
+        display: flex;
+        flex: 1 1 auto;
+        justify-items: center;
+        justify-content: space-around;
+        text-align: center;
+        margin: 5px;
+    }
+    #expiriment-to-reset-nav {
+        display: block;
     }
 }

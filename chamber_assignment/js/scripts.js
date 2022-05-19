@@ -11,6 +11,9 @@ function get_date(){
     const date_time = new Date();
     let current_day = date_time.getDay()
     current_day = convert_day(current_day)
+    if (current_day == 1 && current_day == 2) {
+        display_banner()
+    }
     const day_in_month = date_time.getDate()
     let current_month = date_time.getMonth()
     current_month = convert_month(current_month)
@@ -19,30 +22,41 @@ function get_date(){
     document.querySelector('#time-date').textContent = current_date
     console.log('Ending [get_date()]...');
 }
-
+function display_banner(){
+    const weekday_banner = document.querySelector(".banner")
+    weekday_banner.style.display = 'block'
+}
 function convert_day(day){
     console.log('Running [convert_day()]...');
     let weekday = 'None'
+    console.log(`DAY! = ${day}`);
     if (day = 0){
         weekday = 'Sunday'
+        console.log('I am Sunday!');
     }
     else if (day = 1){
         weekday = 'Monday'
+        console.log('I am Sunday!');
     }
-    else if (day = 2){
+    else if (day === 2){
         weekday = 'Tuesday'
+        console.log('I am Sunday!');
     }
-    else if (day = 3){
+    else if (day === 3){
         weekday = 'Wednesday'
+        console.log('I am Wednesday!');
     }
-    else if (day = 4){
+    else if (day === 4){
         weekday = 'Thursday'
+        console.log('I am Thursday!');
     }
-    else if (day = 5){
+    else if (day === 5){
         weekday = 'Friday'
+        console.log('I am Friday!');
     }
-    else if (day = 6){
+    else if (day === 6){
         weekday = 'Saturday'
+        console.log('I am Saturday!');
     }
     return weekday
 }

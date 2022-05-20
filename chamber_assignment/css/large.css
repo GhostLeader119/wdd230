@@ -1,10 +1,6 @@
-@media only screen and (win-width: 64rem) {
+@media only screen and (min-width: 64rem) {
     nav ul li a{
         padding: .5rem 1rem;
-    }
-    h1, h2, p {
-        color: blue;
-        background-color: red;
     }
     main {
         display: grid;

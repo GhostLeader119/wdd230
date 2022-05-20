@@ -2,6 +2,9 @@
     nav ul li a{
         padding: .5rem 1rem;
     }
+    #warn {
+        display: block;
+    }
     main {
         display: grid;
         grid-gap: 3px;

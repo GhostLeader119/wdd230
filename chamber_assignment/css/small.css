@@ -74,7 +74,7 @@ nav ul {
 nav ul.open {
     display: block;
 }
-#signup{
+#signup,#warn{
     display: none;
 }
 #expiriment-to-reset-nav.open {display: block;}

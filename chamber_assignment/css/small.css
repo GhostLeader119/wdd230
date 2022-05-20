@@ -74,6 +74,9 @@ nav ul {
 nav ul.open {
     display: block;
 }
+#signup{
+    display: none;
+}
 #expiriment-to-reset-nav.open {display: block;}
 #navBtn span:nth-child(1) {display: block;}
 #navBtn span:nth-child(2) {display: none;}

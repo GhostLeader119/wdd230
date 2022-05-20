@@ -21,4 +21,17 @@
     #expiriment-to-reset-nav {
         display: block;
     }
+    #signup {
+        display: block;
+    }
+    main {
+        display: grid;
+    }
+    #company-spotlights {
+        display: flex;
+        flex: 1 1 auto;
+        justify-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
 }

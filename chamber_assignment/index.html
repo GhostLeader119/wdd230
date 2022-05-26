@@ -29,7 +29,7 @@
             </ul>
             <p id="time-date">Date here</p>
         </nav>
-        <img src="images/united_valley_chamber.png" alt="United Valley Chamber's logo">
+        <img src="images/united_valley_chamber.webp" alt="United Valley Chamber's logo">
         <h1>United Valley Chamber</h1>
     </header>
     <br>
@@ -42,7 +42,12 @@
             <p>events</p>
         </div>
         <div id="weather">
-            <p>Weather info here</p>
+            <h3>Today's Weather</h3>
+            <img style="display: none;"> <!--Ignore me for now-->
+            <p><span id="tempature-input">N/A</span>&#176; <span id="f-c">F</span></p>
+            <p>Wind Speed: <span id="wind-speed"></span></p>
+            <P>Wind Chill: <span id="wind-chill"></span></P>
+            <button id="temprature-convert">Celsius</button>
         </div>
         <div id="news-release">
             <p>news release</p>
@@ -65,7 +70,7 @@
     </main>
     <footer>
         <div class="footer-zone-1">
-            <img src="images/united_valley_chamber.png" alt="United Valley Chamber's logo">
+            <img src="images/united_valley_chamber.webp" alt="United Valley Chamber's logo">
             <div>
                 <p>Contact info here</p>
                 <p>Name</p>
@@ -79,5 +84,6 @@
         <a href="../index.html">Return to assignment hub</a>
     </footer>
     <script src="../chamber_assignment/js/scripts.js"></script>
+    <script src="../chamber_assignment/js/windchill.js"></script>
 </body>
 </html>

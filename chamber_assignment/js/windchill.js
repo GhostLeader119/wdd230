@@ -29,7 +29,7 @@ function convert_celsius(){
     let current_status = document.querySelector('#f-c').textContent
     console.log(`Current_status = ${current_status}`);
     if (current_status == 'F'){
-        document.querySelector("#f-c").textContent = 'C'
+        document.querySelector("#f-c").textContent = 'C -WIP-'
         document.querySelector("#temprature-convert").textContent = "Fahrenheit"
         windchill_C()
     }

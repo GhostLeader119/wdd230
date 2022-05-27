@@ -36,14 +36,18 @@
         <p id="warn">Please be aware, content is work in progress and the borders are temporary</p>
     <main>
         <div id="hero-image">
-            <img src="#" alt="Hero image here">
+            <img src="images/wdd230-org-LARGE.jpg" alt="Hero image here" sizes="50vw"
+            srcset="
+                images/wdd230-org-SMALL.jpg 300w,
+                images/wdd230-org-medium.jpg 500w,
+                images/wdd230-org-LARGE.jpg 800w">
         </div>
         <div id="events">
             <p>events</p>
         </div>
         <div id="weather">
             <h3>Today's Weather</h3>
-            <img style="display: none;"> <!--Ignore me for now-->
+            <img src="#" alt="spot for weather image, maybe" style="display: none;"> <!--Ignore me for now-->
             <p><span id="tempature-input">N/A</span>&#176; <span id="f-c">F</span></p>
             <p>Wind Speed: <span id="wind-speed"></span></p>
             <P>Wind Chill: <span id="wind-chill"></span></P>

@@ -98,3 +98,10 @@ footer img {
     display: block;
     text-align: center;
 }
+#weather button {
+    margin-bottom: .5em;
+}
+
+/* 1024x768 <LArgest - 768x1024 - 
+800x600 < Medium - 600x800 - 
+480x320 <SMALLEST - 320x480 */

@@ -32,20 +32,76 @@
         <img src="images/united_valley_chamber.webp" alt="United Valley Chamber's logo">
         <h1>United Valley Chamber</h1>
     </header>
-    <main>
+    <main id="discover-main">
+        <br>
         <div>
-            <h2>Main content here</h2>
-            <h3>About the valley</h3>
-            <p>Tisk Tisk</p>
-            <img src="#">
-            <h3>Demographics</h3>
-            <p>Tisk Tisk</p>
-            <img src="#">
-            <h3>Snake River</h3>
-            <img src="#">
-            <p>About the River</p>
+            <h3>Welcome to Star Valley!</h3>
+            <picture id="valley-img">
+                <source media="(max-width:400px)" srcset="#" data-src="images/valley_pic_400px.png">
+                <source media="(max-width:600px)" srcset="#" data-src="images/valley_pic_600px.png">
+                <source media="(max-width:1000px)" srcset="#" data-src="images/valley_pic_1000px.png">
+                <img src="images/valley_pic_1000px.png" alt="A picture of Star Valley WY during the evening">
+            </picture>
+            <p>We are a group of towns on the Wyoming-Idaho border, just outside of Jackson Hole and Teton National Park.
+                The approximate population of the area is 5215.
+            </p>
         </div>
-        <p>It has been <span id="visit-time"></span> days since your last visit!</p>
+        <br>
+        <div>
+            <h3>Snake River</h3>
+            <picture id="river-img">
+                <source media="(max-width:400px)" srcset="#" data-src="images/river_main_400px.png">
+                <source media="(max-width:600px)" srcset="#" data-src="images/river_main_600px.png">
+                <source media="(max-width:1000px)" srcset="#" data-src="images/river_main_1000px.png">
+                <img src="images/river_main_1000px.png" alt="A still image of snake river">
+            </picture>
+            <p>The Snake River flows through Jackson Hole, goes down Snake River Canyon and empties 
+                in the Palisade Reservoir. This provides many opprotunites for both white water rafting and boating 
+                with several businesses that specialize in such activities in the area.</p>
+        </div>
+        <br>
+        <div>
+            <h3>Winter Fun *placeholder image*</h3>
+            <picture id="winter-img">
+                <source media="(max-width:400px)" srcset="#" data-src="images/winter_temp_400px.png">
+                <source media="(max-width:600px)" srcset="#" data-src="images/winter_temp_600px.png">
+                <source media="(max-width:1000px)" srcset="#" data-src="images/winter_temp_1000px.png">
+                <img src="images/winter_temp_1000px.png" alt="An image of much snow">
+            </picture>
+            <p>The valley recieves several feet of snow during the winter leading to plenty of adventures
+                for winter sports enthusiasts. There are a multitude of paths available for snowmobilers 
+                through the moauntain landscape providing ample challenges while many open spaces exist for novices
+                to the sport.
+            </p>
+        </div>
+        <br>
+        <div>
+            <h3>Animal Life</h3>
+            <picture id="moose-img">
+                <source media="(max-width:400px)" srcset="#" data-src="images/moose_400px.png">
+                <source media="(max-width:600px)" srcset="#" data-src="images/moose_600px.png">
+                <source media="(max-width:1000px)" srcset="#" data-src="images/moose_1000px.png">
+                <img src="images/moose_1000px.png" alt="An image of a moose in snow">
+            </picture>
+            <p>The rural and remote nature of the Valley combined with its proximity to a few of
+                America's natural parks makes it an excellent place to view wildlife. This is true
+                whether you are camping or enjoying your backyard.
+            </p>
+        </div>
+        <br>
+        <div>
+            <h3>Camping</h3>
+            <picture id="tetons-img">
+                <source media="(max-width:400px)" srcset="#" data-src="images/tetons_400px.png">
+                <source media="(max-width:600px)" srcset="#" data-src="images/tetons_600px.png">
+                <source media="(max-width:1000px)" srcset="#" data-src="images/tetons_1000px.png">
+                <img src="images/tetons_1000px.png" alt="An image of the Tetons">
+            </picture>
+            <p>As mentioned and shown previously, there is alot of natural beauty in the surrounding
+                area. As such, there is no shortage of interesting campaing spots.
+            </p>
+        </div>
+        <p id="visit-time"></p>
     </main>
     <footer>
         <div class="footer-zone-1">
@@ -63,6 +119,7 @@
         <a href="../index.html">Return to assignment hub</a>
     </footer>
     <script src="../chamber_assignment/js/scripts.js"></script>
-    <script src="../chamber_assignment/js/windchill.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/dayvisit.js"></script>
 </body>
 </html>

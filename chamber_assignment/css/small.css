@@ -1,6 +1,8 @@
 img {
     max-width: 100%;
     height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 h1,h2,h3,h4,h5{
     font-family: Garamond, Georgia, serif;
@@ -100,6 +102,25 @@ footer img {
 }
 #weather button {
     margin-bottom: .5em;
+}
+#discover-main {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+#discover-main img {
+    max-width: 90%;
+    margin: 0px;
+}
+#discover-main div {
+    background-color: #118D36;
+    padding: 0.1em;
+}
+#discover-main p {
+    text-align: center;
+    margin-left: .3em;
+    margin-right: .3em;
 }
 
 /* 1024x768 <LArgest - 768x1024 - 

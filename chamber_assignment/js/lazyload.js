@@ -10,7 +10,7 @@ function preloadImage(img) {
     if(!srcset) {
         return;
     }
-
+    console.log(`Loaded image: ${srcset}`);
     img.srcset = srcset
 }
 

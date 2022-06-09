@@ -1,7 +1,7 @@
 const images = document.querySelectorAll("[data-src]")
 const imgOptions = {
     threshold: 1,
-    rootMargin: "0px 0px -300px 0px"
+    rootMargin: "0px 0px -500px 0px"
 }
 
 function preloadImage(img) {
@@ -9,7 +9,7 @@ function preloadImage(img) {
     if(!src) {
         return;
     }
-
+    console.log(`Loading image: ${src}`);
     img.src = src
 }
 
@@ -20,6 +20,7 @@ const imgObserver = new IntersectionObserver((entries,imgObserver) => {
             return
         }
         else {
+            console.log('Preloading image');
             preloadImage(entry.target)
             imgObserver.unobserve(entry.target)
         }
@@ -41,5 +42,6 @@ images.forEach(image=> {
 })
 
 imagesToLoad.forEach((img) => {
+    console.log(`ImagesToLoad ${img}`);
     loadImages(img);
   });

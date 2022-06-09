@@ -30,6 +30,6 @@ if (days == 0) {
 } 
 else {
     localStorage.setItem("visits-ls", current_date);
-    visitor_time.textContent = `It has been ${days} days since you last visit!`;
+    visitor_time.textContent = `It has been ${days} days since your last visit!`;
 }
 

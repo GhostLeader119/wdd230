@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join us</title>
+    <meta name="description" content="United Valley Chamber's join us page for BYU Idaho's WDD230 class">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+        </div>
+        <nav id="expiriment-to-reset-nav">
+            <button id="navBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover us</a></li>
+                <li class="active"><a href="join.html">Join Us</a></li>
+                <li><a href="#">Placeholder 3</a></li>
+                <li><a href="https://www.facebook.com/"><img src="images/317727_facebook_social_media_social_icon.png" alt="Facebook"></a></li>  
+                <li><a href="https://twitter.com/"><img src="images/3225183_app_logo_media_popular_social_icon.png" alt="Twitter"></a></li>  
+            </ul>
+            <p id="time-date">Date here</p>
+        </nav>
+        <img src="images/united_valley_chamber.webp" alt="United Valley Chamber's logo">
+        <h1>United Valley Chamber</h1>
+    </header>
+
+    <main id="sign-up">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Core applicant information</legend>
+                <label>First name* <input type="text" name="fname" required></label>
+                <label>Last name* <input type="text" name="lname" required></label>
+                <label>Phone* <input type="tel" name="phone" placeholder="3006007782" required></label>
+                <label>Email* <input type="email" name="email" required placeholder="example@gmail.com" required></label>
+                <label>Business Name <input type="text" name="b-name" required></label>
+                <label>position !NOT FINALIZED! <input type="text" name="b-position" minlength="7" pattern="[A-Za-z]" title="Limited to characters, spaces amd hyphens"></label>
+            </fieldset>
+            <fieldset class="btnholder">
+                <legend>Membership options</legend>
+                <label class="rbtn"><input type="radio" name="membership-package" value="bronze">Bronze</label>
+                <label class="rbtn"><input type="radio" name="membership-package" value="silver">Silver</label>
+                <label class="rbtn"><input type="radio" name="membership-package" value="gold">Gold</label>
+                <label class="rbtn"><input type="radio" name="membership-package" value="gold">NP</label>
+            </fieldset>
+            <fieldset>
+                <label for="t3">Please leave a short description of your business:</label>
+                <textarea name="msg" maxlength="140" rows="5"></textarea>
+            </fieldset>
+            <input class="submitBtn" type="submit" value="Send my application">
+            <p>Time stamp revealed to demonstrate functionality: <span class="timestamp"></span></p>
+        </form>
+        <div>
+            <section>
+                <h3>Bronze Membership</h3>
+                <ul>
+                    <li><p>Low cost</p></li>
+                    <li><p>Access to Chamber events</p></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Silver Membership</h3>
+                <ul>
+                    <li><p>Middle ground cost</p></li>
+                    <li><p>Eligable to submit community news articles</p></li>
+                    <li><p>access to trainers in marketing</p></li>
+                    <li><p>Minor discount for Chamber events</p></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li><p>Most expensive</p></li>
+                    <li><p>Eligable for community spotlights</p></li>
+                    <li><p>Access to all services</p></li>
+                    <li><p>Modest discount for all Chamber events</p></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Non Profit</h3>
+                <ul>
+                    <li><p>Applies only to nonprofit organizations</p></li>
+                    <li><p>No membership fee</p></li>
+                    <li><p>Access to advertising assistance and training</p></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+
+	A business position title field of type text that is not required but only accepts alpha characters, 
+hyphens, and spaces with a minimum of seven characters using a regular expressionLinks to an external 
+site. pattern.
+
+
+
+
+    <footer>
+        <div class="footer-zone-1">
+            <img src="images/united_valley_chamber.webp" alt="United Valley Chamber's logo">
+            <div>
+                <p>Contact info here</p>
+                <p>Name</p>
+                <p>Phone number</p>
+                <p>Email</p>
+            </div>
+            <a href="#">Map link here</a>
+        </div>
+        <p>&copy; <span class="year"></span> | Caden Campbell | Wyoming</p>
+        <p class="last-mod"></p>
+        <a href="../index.html">Return to assignment hub</a>
+    </footer>
+    <script src="../chamber_assignment/js/scripts.js"></script>
+    <script src="js/timestamp.js"></script>
+</body>
+</html>

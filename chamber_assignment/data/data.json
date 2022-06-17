@@ -1,0 +1,67 @@
+{
+"companies": [
+{
+    "name":"Salt River Investments",
+    "addresses":"434 Example Way",
+    "phone_num":"307-455-0000",
+    "website_URLs":"www.$altriver.org",
+    "logo_image":"https://loremflickr.com/250/250",
+    "membership_lv":"silver"
+},
+{
+    "name":"Big Rock Expeditions",
+    "addresses":"32 Example St",
+    "phone_num":"307-085-0000",
+    "website_URLs":"www.bigrockexpiditions.com",
+    "logo_image":"https://loremflickr.com/250/250",
+    "membership_lv":"bronze"
+},
+{
+    "name":"Valley Aid Group",
+    "addresses":"201 Example Way",
+    "phone_num":"307-499-0000",
+    "website_URLs":"www.valleyaid.com",
+    "logo_image":"https://loremflickr.com/250/250",
+    "membership_lv":"np"
+},
+{
+    "name":"Snake River Rafting Co",
+    "addresses":"676 Example Blvd",
+    "phone_num":"307-890-0800",
+    "website_URLs":"www.riverraftingco.com",
+    "logo_image":"https://loremflickr.com/250/250",
+    "membership_lv":"gold"
+},
+{
+    "name":"Tough Hardware",
+    "addresses":"309 Example Way",
+    "phone_num":"307-675-4060",
+    "website_URLs":"www.toughhardware.com",
+    "logo_image":"https://loremflickr.com/250/250",
+    "membership_lv":"silver"
+},
+{
+    "name":"Valley Riding Club",
+    "addresses":"204 Example St",
+    "phone_num":"307-435-9000",
+    "website_URLs":"www.valleyriding.com",
+    "logo_image":"https://loremflickr.com/250/250",
+    "membership_lv":"bronze"
+},
+{
+    "name":"Alpine Outfitters",
+    "addresses":"132 Example blvd",
+    "phone_num":"307-412-0900",
+    "website_URLs":"www.alpineoutfitting.com",
+    "logo_image":"https://loremflickr.com/250/250",
+    "membership_lv":"silver"
+},
+{
+    "name":"Ian's Landscaping",
+    "addresses":"734 Example St",
+    "phone_num":"307-455-0000",
+    "website_URLs":"www.valleylandscaping.com",
+    "logo_image":"https://loremflickr.com/250/250",
+    "membership_lv":"gold"
+}
+]}

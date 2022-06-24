@@ -8,10 +8,10 @@ const weathercondition_loc = document.querySelector('#wx-condition');
 // const captionDesc = document.querySelector('figcaption');
 
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Fairbanks,us&appid=5106b42359082f0f0d14d61d1cf7f8f0&units=imperial' 
+const url_weather = 'https://api.openweathermap.org/data/2.5/weather?q=Fairbanks,us&appid=5106b42359082f0f0d14d61d1cf7f8f0&units=imperial' 
 async function apiFetch() {
   try {
-    const response = await fetch(url);
+    const response = await fetch(url_weather);
     if (response.ok) {
       const data = await response.json();
       console.log(data); // this is for testing the call

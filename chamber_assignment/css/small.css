@@ -168,15 +168,12 @@ form label input:required:valid {
     align-items: center; 
     justify-content: center;
 }
-
 /*directory controls*/
 div.bcards {
     display: block;
     max-width: 100%;
     margin-left: -55px;
-}
-
-  
+} 
 .bcards section {
     margin: 0.25rem;
     padding: 0.35rem;
@@ -190,3 +187,11 @@ div.bcards {
     max-width: 80%;
     height: auto;
   }
+/* Weather panel */
+#weather img {
+    background-color: blue;
+    padding: .5em;
+    border: white 2px solid;
+    border-radius: 25% 25% 25% 25%;
+    box-shadow: 0 0 50px #222;
+}

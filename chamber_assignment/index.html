@@ -52,12 +52,14 @@
             <p>events</p>
         </div>
         <div id="weather">
-            <h3>Today's Weather</h3>
-            <img src="#" alt="spot for weather image, maybe" style="display: none;"> <!--Ignore me for now-->
-            <p><span id="tempature-input">N/A</span>&#176; <span id="f-c">F</span></p>
+            <h3>Today's Weather in Jackson</h3>
+            <p id="wx-condition"></p>
+            <img src="" alt="" id="weather-icon">
+            <p><span id="current-temp">N/A</span>&#176; <span id="f-c">F</span></p>
             <p>Wind Speed: <span id="wind-speed"></span></p>
             <P>Wind Chill: <span id="wind-chill"></span></P>
             <button id="temprature-convert">Celsius</button>
+            <p>Data provided by <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
         </div>
         <div id="news-release">
             <p>news release</p>
@@ -101,6 +103,6 @@
         <a href="../index.html">Return to assignment hub</a>
     </footer>
     <script src="../chamber_assignment/js/scripts.js"></script>
-    <script src="../chamber_assignment/js/windchill.js"></script>
+    <script src="../chamber_assignment/js/weatherapi.js"></script>
 </body>
 </html>

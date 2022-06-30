@@ -26,14 +26,18 @@
     }
     main {
         display: grid;
+        padding-bottom: 1em;
     }
+    
     #company-spotlights {
         display: flex;
         flex: 1 1 auto;
         justify-items: center;
         justify-content: space-around;
         text-align: center;
+        padding-bottom: 1em;
     }
+    div.spotlight {margin-right: .2em;}
     #discover-main img:hover {box-shadow: 0 0 50px #333;}
     #sign-up {
         display: grid;
@@ -92,5 +96,3 @@
     width: auto;
     height: 30px;
   }
-
-

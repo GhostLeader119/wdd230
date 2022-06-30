@@ -11,8 +11,6 @@ function compare_dates(new_time,old_time) {
 
 }
 
-console.log('Running dayvisit.js');
-
 
 const visitor_time = document.querySelector("#visit-time")
 

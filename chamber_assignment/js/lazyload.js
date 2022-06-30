@@ -6,17 +6,14 @@ const imgOptions = {
 }
 
 function preloadImage(img) {
-    console.log('Ran preload Image');
     const srcset = img.getAttribute("data-src");
     if(!srcset) {
         return;
     }
-    console.log(`Loaded image: ${srcset}`);
     img.srcset = srcset
 }
 
 const imgObserver = new IntersectionObserver((entries,imgObserver) => {
-    console.log('imgObserver run');
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
             return
@@ -37,7 +34,6 @@ const loadImages = (image) => {
 };
 
 
-console.log('JS run...');
 images.forEach(image=> {
     imgObserver.observe(image)
 })

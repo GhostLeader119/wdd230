@@ -3,7 +3,6 @@ function windchill_F(){
     const wind_speed = 5 // Calcs run in mph
     let windchill = 'N/A'
     if (tempature <= 50 && wind_speed > 3 ) {
-        console.log('System functional');
         windchill = 35.74 + 0.6215 * tempature - 35.75 * (wind_speed ** 0.16) + 0.4275 * tempature * (wind_speed ** 0.16)
         windchill = Math.round(windchill)
     }
@@ -16,7 +15,6 @@ function windchill_C(){
     const wind_speed = 5 // Calcs run in kph
     let windchill = 'N/A'
     if (tempature <= 10 && wind_speed > 4.8){
-        console.log('System functional');
         windchill = 35.74 + 0.6215 * tempature - 35.75 * (wind_speed ** 0.16) + 0.4275 * tempature * (wind_speed ** 0.16)
         windchill = Math.round(windchill)
     }
@@ -25,9 +23,7 @@ function windchill_C(){
     document.querySelector("#wind-chill").textContent = windchill
 }
 function convert_celsius(){
-    console.log('Toggle between C and F');
     let current_status = document.querySelector('#f-c').textContent
-    console.log(`Current_status = ${current_status}`);
     if (current_status == 'F'){
         document.querySelector("#f-c").textContent = 'C -WIP-'
         document.querySelector("#temprature-convert").textContent = "Fahrenheit"
@@ -40,6 +36,6 @@ function convert_celsius(){
     }
 }
 
-console.log('System: windchill.js loaded...');
+
 windchill_F()
 document.querySelector("#temprature-convert").addEventListener("click", convert_celsius);

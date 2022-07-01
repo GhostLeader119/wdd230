@@ -43,7 +43,7 @@
                 <label>First name* <input type="text" name="fname" required></label>
                 <label>Last name* <input type="text" name="lname" required></label>
                 <label>Phone* <input type="tel" name="phone" placeholder="3006007782" required></label>
-                <label>Email* <input type="email" name="email" required placeholder="example@gmail.com" required></label>
+                <label>Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
                 <label>Business Name <input type="text" name="b-name" required></label>
                 <label>position <input type="text" name="b-position" minlength="7" pattern="[a-zA-Z0-9\s]+" title="Limited to letters, spaces and hyphens"></label>
             </fieldset>
@@ -55,7 +55,7 @@
                 <label class="rbtn"><input type="radio" name="membership-package" value="gold">NP</label>
             </fieldset>
             <fieldset>
-                <label for="t3">Please leave a short description of your business:</label>
+                <label>Please leave a short description of your business:</label>
                 <textarea name="msg" maxlength="140" rows="5"></textarea>
             </fieldset>
             <input class="submitBtn" type="submit" value="Send my application">
@@ -106,8 +106,8 @@
                 <p>307-300-0000</p>
                 <p>M.Davis@example.com</p>
             </div>
-            <a href="https://www.google.com/maps">Map link</a>
-            <button><a href="contact.html">Contact Us</a></button>
+            <button onclick="window.location.href='https://www.google.com/maps';">Map link</button>
+            <button onclick="window.location.href='contact.html';">Contact Us</button>
         </div>
         <p>&copy; <span class="year"></span> | Caden Campbell | Wyoming</p>
         <p class="last-mod"></p>

@@ -26,10 +26,15 @@
     }
     main {
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto auto auto;
         padding-bottom: 1em;
+        margin-left: 3px;
+        margin-right: 3px;
     }
-    
+    #hero-div{grid-column: 1/3;grid-row: 1/2;}
     #company-spotlights {
+        grid-column: 1/3;grid-row: 4/5;
         display: flex;
         flex: 1 1 auto;
         justify-items: center;
@@ -37,6 +42,7 @@
         text-align: center;
         padding-bottom: 1em;
     }
+    #events{ grid-column: 2/3;grid-row: 2/3;}
     div.spotlight {margin-right: .2em;}
     #discover-main img:hover {box-shadow: 0 0 50px #333;}
     #sign-up {

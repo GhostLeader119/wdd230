@@ -44,7 +44,8 @@
                 images/wdd230-org-medium.jpg 600w,
                 images/wdd230-org-LARGE.jpg 1200w"> -->
                 <picture id="hero-img">
-                <source media="(max-width:100px)" srcset="images/placeholder_image.png" data-src="images/thaynewy400px.png">
+                <source media="(max-width:200px)" srcset="images/placeholder_image.png" data-src="images/thaynewy400px.png">
+                <source media="(max-width:400px)" srcset="images/placeholder_image.png" data-src="images/thaynewy400px.png">
                 <source media="(max-width:600px)" srcset="images/placeholder_image.png" data-src="images/thaynewy600px.png">
                 <source media="(max-width:1000px)" srcset="images/placeholder_image.png" data-src="images/thaynewy1000px.png">
                 <img src="images/thaynewy1000px.png" alt="A picture of the middle of Thayne WY">
@@ -124,5 +125,6 @@
     </footer>
     <script src="../chamber_assignment/js/scripts.js"></script>
     <script src="../chamber_assignment/js/weatherapi.js"></script>
+    <script src="js/lazyload.js"></script>
 </body>
 </html>

@@ -30,6 +30,8 @@ function displayCompany(company) {
   
     logo.setAttribute('src', company.logo_image);
     logo.setAttribute('alt', `Logo of ${company.name}`);
+    logo.setAttribute('width', '250');
+    logo.setAttribute('height', '250');
     logo.setAttribute('loading', 'lazy');
   
 

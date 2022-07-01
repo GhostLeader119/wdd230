@@ -36,7 +36,6 @@
         <h1>United Valley Chamber</h1>
     </header>
     <br>
-        <p id="warn">Please be aware, content is work in progress and the borders are temporary</p>
     <main>
         <div id="hero-div">
             <!-- <img src="images/wdd230-org-LARGE.jpg" alt="Hero image here" sizes="75vw"
@@ -45,11 +44,12 @@
                 images/wdd230-org-medium.jpg 600w,
                 images/wdd230-org-LARGE.jpg 1200w"> -->
                 <picture id="hero-img">
-                    <source media="(max-width:400px)" srcset="images/wdd230-org-SMALL.jpg">
-                    <source media="(max-width:600px)" srcset="images/wdd230-org-medium.jpg">
-                    <source media="(max-width:1200px)" srcset="images/wdd230-org-LARGE.jpg">
-                    <img src="images/wdd230-org-LARGE.jpg" alt="hero image test">
+                <source media="(max-width:100px)" srcset="images/placeholder_image.png" data-src="images/thaynewy400px.png">
+                <source media="(max-width:600px)" srcset="images/placeholder_image.png" data-src="images/thaynewy600px.png">
+                <source media="(max-width:1000px)" srcset="images/placeholder_image.png" data-src="images/thaynewy1000px.png">
+                <img src="images/thaynewy1000px.png" alt="A picture of the middle of Thayne WY">
                 </picture>
+                <p>We here at United Valley Chamber are dedicated to helping local businesses grow and develop.</p>
         </div>
         <div id="events">
             <h2>Events:</2>
@@ -115,7 +115,7 @@
                 <p>307-300-0000</p>
                 <p>M.Davis@example.com</p>
             </div>
-            <a href="https://www.google.com/maps">Map link</a>
+            <button><a href="https://www.google.com/maps">Map link</a></button>
             <button><a href="contact.html">Contact Us</a></button>
         </div>
         <p>&copy; <span class="year"></span> | Caden Campbell | Wyoming</p>

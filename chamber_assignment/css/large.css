@@ -13,7 +13,6 @@
         margin: 5px;
     }
     #company-spotlights {
-        border: 5px solid black;
         grid-row: 1/4;
         grid-column: 3/4;
         display:grid;

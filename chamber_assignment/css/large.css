@@ -24,5 +24,10 @@
         padding: 0.5em;
     }
     img#hero-img{margin: 0px;padding: 0px;float: left;}
+    #contact-list{display: grid; 
+        text-align: center;
+        grid-template-columns: 1fr 1fr 1fr;
+      
+      }
 
 }

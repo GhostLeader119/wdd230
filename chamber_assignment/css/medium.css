@@ -57,9 +57,13 @@
         grid-template-rows: auto;
     }
 
-    /* directory stuff */
+    #contact-list{display: grid; 
+      text-align: center;
+      grid-template-columns: 1fr 1fr;
     
-  } 
+    }
+    
+  }  /* directory stuff */
   #direcotry-main{display: block; text-align: center;}
   div.bcards {
     display: grid;

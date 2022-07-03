@@ -27,7 +27,7 @@ if (days == 0 && new_user != 1) {
     localStorage.setItem("visit-ping", 1);
 } 
 else if (days == 0 && new_user == 1){
-    visitor_time.textContent = `Welcome back!`;
+    visitor_time.textContent = `Last visited today!`;
     localStorage.setItem("visits-ls", current_date);
 }
 else {

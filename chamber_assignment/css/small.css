@@ -263,3 +263,4 @@ main#contact-us section{
     color: black;
 }
 #contact-list{display: block; text-align: center;}
+.hidden-elm {display: none;}

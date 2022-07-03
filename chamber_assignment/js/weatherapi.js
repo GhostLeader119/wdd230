@@ -13,7 +13,7 @@ async function apiFetch() {
     const response = await fetch(url_weather);
     if (response.ok) {
       const data = await response.json();
-       displayResults(data);
+      displayResults(data);
     } else {
         throw Error(await response.text());
     }
@@ -36,7 +36,7 @@ function displayResults(weatherData) {
     let tempature = weatherData.main.temp
 
     weathercondition_loc.textContent = weatherData.weather[0].description
-
+    window.global_data = [wind_speed,tempature]
     windchill_F(tempature,wind_speed)
 }
 
@@ -47,36 +47,52 @@ function windchill_F(tempature,wind_speed){
         windchill = Math.round(windchill)
     }
     currentTemp.textContent = tempature
-    windspeed_loc.textContent = wind_speed + " MPH"
+    windspeed_loc.textContent = wind_speed
     windchill_loc.textContent = windchill
+    document.querySelector("#speedIdent").textContent = "MPH"
 }
 function windchill_C(){
-    const tempature = 39 // Calacs run in C
-    const wind_speed = 5 // Calcs run in kph
-    let windchill = 'N/A'
-    if (tempature <= 10 && wind_speed > 4.8){
-        windchill = 35.74 + 0.6215 * tempature - 35.75 * (wind_speed ** 0.16) + 0.4275 * tempature * (wind_speed ** 0.16)
-        windchill = Math.round(windchill)
+
+    let old_tempature = currentTemp.textContent
+    let old_wind = windspeed_loc.textContent
+    let old_windchill = windchill_loc.textContent
+    let metric_windchill = 'N/A'
+
+    let metric_temp = (old_tempature - 32) / 1.8
+    let metric_wind = old_wind * 1.609344
+    if (old_windchill != 'N/A'){
+        let metric_windchill = (old_windchill - 32) / 1.8
+        metric_windchill = metric_windchill.toFixed(2)
     }
-    document.querySelector("#tempature-input").textContent = tempature
-    document.querySelector("#wind-speed").textContent = wind_speed + " KPH"
-    windchill_loc.textContent = windchill
+    else {
+        let metric_windchill = old_windchill
+    }
+
+    currentTemp.textContent = metric_temp.toFixed(2)
+    windspeed_loc.textContent = metric_wind.toFixed(2)
+    windchill_loc.textContent = metric_windchill
+    document.querySelector("#speedIdent").textContent = "KPH"
 }
 function convert_celsius(){
     let current_status = document.querySelector('#f-c').textContent
+
+    let wind_speed = global_data[0]
+    let tempature = global_data[1]
+
     if (current_status == 'F'){
-        document.querySelector("#f-c").textContent = 'C -WIP-'
+        document.querySelector("#f-c").textContent = 'C'
         document.querySelector("#temprature-convert").textContent = "Fahrenheit"
         windchill_C()
     }
     else {
         document.querySelector("#f-c").textContent = 'F'
         document.querySelector("#temprature-convert").textContent = "Celsius"
-        windchill_F()
+        windchill_F(tempature,wind_speed)
     }
 }
 
 apiFetch();
+
 
 
 document.querySelector("#temprature-convert").addEventListener("click", convert_celsius);

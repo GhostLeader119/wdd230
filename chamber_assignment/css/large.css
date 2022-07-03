@@ -31,7 +31,7 @@
     footer {
         padding: 0.5em;
     }
-    img#hero-img{margin: 0px;padding: 0px;float: left;}
+    div#hero-div img {max-width: 100%; height: auto;margin-top: .2em;}
     #contact-list{display: grid; 
         text-align: center;
         grid-template-columns: 1fr 1fr 1fr;

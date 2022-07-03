@@ -1,5 +1,7 @@
 const requestURL = 'data/data.json';
 const cards = document.querySelector('.bcards');
+var global_status = 0
+
 
 fetch(requestURL)
   .then(function (response) {
@@ -44,3 +46,53 @@ function displayCompany(company) {
   
     document.querySelector('div.bcards').appendChild(card);
   }
+
+  function createlist(company){
+    let list_item = document.createElement('li');
+
+    let name = document.createElement('h2');
+    let address = document.createElement('p')
+    let phonenumber = document.createElement('p')
+    let websiteurl = document.createElement('p')
+    let membershiplv = document.createElement('p')
+
+    name.textContent = company.name;
+    address.textContent = company.addresses;
+    phonenumber.textContent = company.phone_num;
+    websiteurl.textContent = company.website_URLs;
+    membershiplv.textContent = `Membership: ${company.membership_lv}`;
+
+    list_item.appendChild(name);
+    list_item.appendChild(address);
+    list_item.appendChild(phonenumber);
+    list_item.appendChild(websiteurl);
+    list_item.appendChild(membershiplv);
+
+    document.querySelector('ul#c-list').appendChild(list_item);
+  }
+
+function toggle_view(){
+  // Toggles between list and card views
+  const blist = document.querySelector(".blist")
+  const bcards = document.querySelector(".bcards")
+
+  fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const companies2 = jsonObject['companies'];;
+    if (global_status === 0) {
+    bcards.innerHTML = "";
+    global_status = 1
+    companies2.forEach(createlist);
+  } 
+  else {
+    blist.innerHTML = '<ul id="c-list"></ul>';
+    companies2.forEach(displayCompany);
+    global_status = 0
+  }
+  });
+
+  
+}

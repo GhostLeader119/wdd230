@@ -1,8 +1,8 @@
-// function toggleMenu(){
-//     document.getElementById("primaryNav").classList.toggle("open")
-//     document.getElementById("navBtn").classList.toggle("open")
-//     document.getElementById("expiriment-to-reset-nav").classList.toggle("open")
-// }
+ function toggleMenu(){
+     document.getElementById("primaryNav").classList.toggle("open")
+     document.getElementById("navBtn").classList.toggle("open")
+     document.getElementById("expiriment-to-reset-nav").classList.toggle("open")
+ }
 
 // function get_date(){
 //     const date_time = new Date();
@@ -73,6 +73,6 @@
  }
 // get_date()
  set_year()
-// const x = document.getElementById('navBtn')
+ const x = document.getElementById('navBtn')
 
-// x.onclick = toggleMenu;
+ x.onclick = toggleMenu;

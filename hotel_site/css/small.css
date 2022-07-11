@@ -21,6 +21,64 @@ header {
     padding-top: 5em;
 }
 
+/* NAV */
+nav {
+    display:flex;
+    color: #222;
+    padding-bottom: 2em;
+}
+nav p {
+    text-align: right;
+    flex: 1 1 auto
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav button {
+    margin:  .2rem 2vw;
+    background: transparent;
+    border: 1px solid white;
+    font-size: 2rem;
+    
+}
+nav button:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+nav ul li a{
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #222;
+    border-top: 1px solid rgba(0, 0, 0, .5);
+}
+nav li a:hover{
+    background-color: rgba(0, 0, 0, .3);
+}
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, .2);
+    color: #fff;
+}
+
+nav ul {
+    display: none;
+}
+nav ul.open {
+    display: block;
+}
+#signup,#warn{
+    display: none;
+}
+#expiriment-to-reset-nav.open {display: block;}
+#navBtn span:nth-child(1) {display: block;}
+#navBtn span:nth-child(2) {display: none;}
+
+#navBtn.open span:nth-child(1) {display: none;}
+#navBtn.open span:nth-child(2) {display: block;}
+
+
 /* Footer */
 
 footer {
@@ -51,3 +109,5 @@ section {
     color: #26532B; 
     /* color holder temp */
 }
+
+

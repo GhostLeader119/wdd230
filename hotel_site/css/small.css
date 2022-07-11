@@ -1,0 +1,53 @@
+/* Central Command */
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Merriweather', serif;
+}
+
+p, li {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+* {text-align: center}
+
+.hidden {display: none;}
+
+iframe {max-width: 100%; height: auto;}
+
+/* Header */
+
+header {
+    background-color:#56A9D6 ;
+    padding-top: 5em;
+}
+
+/* Footer */
+
+footer {
+    background-color: #399E5A;
+    padding: .8em;
+}
+footer div {
+    background-color: #DCD9D3;
+    padding: 3em;
+    margin: 1em;
+}
+div.social-media{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: fit-content;
+}
+div.social-media a:hover {
+    background-color: rgba(0, 0, 0, .3);
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 25% 25% 25% 25%;
+    padding: .2em;
+}
+/* section */
+
+section {
+    background-color: #DCD9D3;
+    border: 2px solid #0B3954;
+    color: #26532B; 
+    /* color holder temp */
+}

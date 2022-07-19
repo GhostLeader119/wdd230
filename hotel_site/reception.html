@@ -23,7 +23,7 @@
             <ul id="primaryNav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li class="active"><a href="reservations.html">Reservations</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="temples.html">Temples</a></li>
                 <li><a href="https://www.facebook.com/">Facebook</a></li>  
@@ -32,30 +32,7 @@
         </nav>
     </header>
     <main>
-        <form method="get" action="thankyou.html">
-            <fieldset>
-                <legend>Core applicant information</legend>
-                <label>First name* <input type="text" name="fname" required></label>
-                <label>Last name* <input type="text" name="lname" required></label>
-                <label>Phone* <input type="tel" name="phone" placeholder="3006007782" required></label>
-                <label>Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
-                <label>Business Name* <input type="text" name="b-name" required></label>
-                <label>position <input type="text" name="b-position" minlength="7" pattern="[a-zA-Z0-9\s]+" title="Limited to letters, spaces and hyphens"></label>
-            </fieldset>
-            <fieldset class="btnholder">
-                <legend>Membership options</legend>
-                <label class="rbtn"><input type="radio" name="membership-package" value="bronze">Bronze</label>
-                <label class="rbtn"><input type="radio" name="membership-package" value="silver">Silver</label>
-                <label class="rbtn"><input type="radio" name="membership-package" value="gold">Gold</label>
-                <label class="rbtn"><input type="radio" name="membership-package" value="gold">NP</label>
-            </fieldset>
-            <fieldset>
-                <label>Please leave a short description of your business:</label>
-                <textarea name="msg" maxlength="140" rows="5"></textarea>
-            </fieldset>
-            <input class="submitBtn" type="submit" value="Send my application">
-            <p class="hidden-elm">Time stamp revealed to demonstrate functionality: <span class="timestamp"></span></p>
-        </form>
+        <h1>Reception</h1>
     </main>
     <footer>
         <div class="map-section">
@@ -74,5 +51,6 @@
             <a href="https://twitter.com/"><img src="images/3225183_app_logo_media_popular_social_icon.png" alt="Twitter"></a>
         </div>
     </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

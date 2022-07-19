@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
         <link rel="shortcut icon" href="images/favicon.ico">
-        <title>Document</title>
+        <title>Missionary Services</title>
         <meta name="description" content="United Valley Chamber's home page for BYU Idaho's WDD230 class">
     </head>
 <body>
@@ -23,7 +23,7 @@
             <ul id="primaryNav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li class="active"><a href="reservations.html">Reservations</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="temples.html">Temples</a></li>
                 <li><a href="https://www.facebook.com/">Facebook</a></li>  
@@ -32,36 +32,37 @@
         </nav>
     </header>
     <main>
-        <form method="get" action="thankyou.html">
-            <fieldset>
-                <legend>Core applicant information</legend>
-                <label>First name* <input type="text" name="fname" required></label>
-                <label>Last name* <input type="text" name="lname" required></label>
-                <label>Phone* <input type="tel" name="phone" placeholder="3006007782" required></label>
-                <label>Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
-                <label>Business Name* <input type="text" name="b-name" required></label>
-                <label>position <input type="text" name="b-position" minlength="7" pattern="[a-zA-Z0-9\s]+" title="Limited to letters, spaces and hyphens"></label>
-            </fieldset>
-            <fieldset class="btnholder">
-                <legend>Membership options</legend>
-                <label class="rbtn"><input type="radio" name="membership-package" value="bronze">Bronze</label>
-                <label class="rbtn"><input type="radio" name="membership-package" value="silver">Silver</label>
-                <label class="rbtn"><input type="radio" name="membership-package" value="gold">Gold</label>
-                <label class="rbtn"><input type="radio" name="membership-package" value="gold">NP</label>
-            </fieldset>
-            <fieldset>
-                <label>Please leave a short description of your business:</label>
-                <textarea name="msg" maxlength="140" rows="5"></textarea>
-            </fieldset>
-            <input class="submitBtn" type="submit" value="Send my application">
-            <p class="hidden-elm">Time stamp revealed to demonstrate functionality: <span class="timestamp"></span></p>
-        </form>
+        <h1>Missionary Services</h1>
+        <p>We here at Temple Inn & Suites are dedicated to assisting missionaries. 
+            If you are interested in additional discounts and help please feel free to contact us below.</p>
+
+        <div>
+            <img src="https://via.placeholder.com/350">
+            <img src="https://via.placeholder.com/350">
+            <img src="https://via.placeholder.com/350">
+        </div>
+            <div id="contact-form">
+                <form method="get" action="thankyou-contact.html">
+                    <fieldset>
+                        <legend>User information</legend>
+                        <label>First name* <input type="text" name="fname" required></label>
+                        <label>Last name* <input type="text" name="lname" required></label>
+                        <label>Phone* <input type="tel" name="phone" placeholder="3006007782" required></label>
+                        <label>Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
+                        </fieldset>
+                    <fieldset>
+                        <label>Please leave us a message:</label>
+                        <legend>Max length is 500 characters</legend>
+                        <textarea name="msg" maxlength="500" rows="5"></textarea>
+                    </fieldset>
+                    <input class="submitBtn" type="submit" value="Reach out to the team">
+                </form>
+            </div>
     </main>
     <footer>
         <div class="map-section">
             <h3>Our location:</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.404837028474!2d-77.09772048536036!3d38.98325594948507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1657561308645!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <!-- <button>Link to Map</button> -->
         </div>
         <div>
             <p></p>
@@ -74,5 +75,6 @@
             <a href="https://twitter.com/"><img src="images/3225183_app_logo_media_popular_social_icon.png" alt="Twitter"></a>
         </div>
     </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

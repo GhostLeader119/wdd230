@@ -32,7 +32,25 @@
         </nav>
     </header>
     <main>
-        <h1>TAGGER</h1>
+        <h2>Contact Form:</h2>
+        <p>Please leave your information below and give us 5-7 buissness days to send you a response.</p>
+        <div id="contact-form">
+            <form method="get" action="thankyou-contact.html">
+                <fieldset>
+                    <legend>User information</legend>
+                    <label>First name* <input type="text" name="fname" required></label>
+                    <label>Last name* <input type="text" name="lname" required></label>
+                    <label>Phone* <input type="tel" name="phone" placeholder="3006007782" required></label>
+                    <label>Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
+                    </fieldset>
+                <fieldset>
+                    <label>Please leave us a message:</label>
+                    <legend>Max length is 500 characters</legend>
+                    <textarea name="msg" maxlength="500" rows="5"></textarea>
+                </fieldset>
+                <input class="submitBtn" type="submit" value="Reach out to the team">
+            </form>
+        </div>
     </main>
     <footer>
         <div class="map-section">

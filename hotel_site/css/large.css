@@ -30,4 +30,18 @@
     .social-media a{
         align-items: center;
     }
+
+    /* Home page */
+
+    main#home-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: .5em;
+    }
+
+    #temple-info {
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
 }

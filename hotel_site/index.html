@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="shortcut icon" href="images/favicon.ico">
-    <title>Document</title>
-    <meta name="description" content="United Valley Chamber's home page for BYU Idaho's WDD230 class">
+    <title>Temple Inn & Suites's Home</title>
+    <meta name="description" content="Temple Inn & Suites's home page for BYU Idaho's WDD230 class">
 </head>
 <body>
     <header>
-        <img src="https://via.placeholder.com/150">
+        <img src="https://via.placeholder.com/150" alt="Temple Inn & Suites's logo">
         <nav id="expiriment-to-reset-nav">
             <button id="navBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primaryNav">
@@ -31,22 +31,78 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div id="temple-info">
-            <p>pass</p>
+    <main id="home-page">
+<div id="temple-info">
+                <!-- Slideshow container -->
+    <div class="slideshow-container fade">
+
+        <!-- Full images with numbers and message Info -->
+        <div class="Containers">
+            <div class="MessageInfo">1 / 3</div>
+            <img src="https://via.placeholder.com/350">
+            <div class="Info">Rexburg ID Temple</div>
         </div>
+    
+        <div class="Containers">
+            <div class="MessageInfo">2 / 3</div>
+            <img src="https://via.placeholder.com/350" >
+            <div class="Info">Washington D.C. Temple</div>
+        </div>
+    
+        <div class="Containers">
+            <div class="MessageInfo">3 / 3</div>
+            <img src="https://via.placeholder.com/350" >
+            <div class="Info">Logan Utah Temple</div>
+        </div>
+    
+        <!-- Back and forward buttons -->
+        <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The circles/dots -->
+    <div>
+        <span class="dots" onclick="currentSlide(1)"></span>
+        <span class="dots" onclick="currentSlide(2)"></span>
+        <span class="dots" onclick="currentSlide(3)"></span>
+        <p>Temple pictures provided by: <a href="https://www.churchofjesuschrist.org">LDS</a></p>
+    </div> 
+
+</div>
+
         <div id="weather-info">
-            <h3>Today's Weather in Bethesda</h3>
+            <h3>Today's Weather in Denver</h3>
             <p id="wx-condition"></p>
             <img src="#" alt="#" id="weather-icon">
             <p><span id="current-temp">N/A</span>&#176; <span id="f-c">F</span></p>
             <p>Wind Speed: <span id="wind-speed"></span> <span id="speedIdent"></span></p>
             <P>Wind Chill: <span id="wind-chill"></span></P>
+            <p>Humidity: <span id="humidity-loc"></span></p>
             <button id="temprature-convert">Celsius</button>
             <p>Data provided by <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
         </div>
         <div id="call-to-action">
-            <p>pass</p>
+            <h3>Feel free to review our options:</h3>
+            <ul>
+                <li>Free Breakfast</li>
+                <li>Free Exercise/workout room</li>
+                <li>Free Indoor pool</li>
+                <li>Free WiFi high-speed internet access and smart TVs</li>
+                <li>Free Parking</li>
+                <li>Free Temple shuttle</li>
+                <li>Free Family history consultation and family ordinance card service</li>
+                <li>Special services for members of the Church of Jesus Christ of Latter Day Saints</li>
+                <li>Special services for Missionaries</li>
+            </ul>
+            <a class="link-emb" href="services.html">Learn more here</a>
+        </div>
+        <div id="weather-alert">
+            <h3>Weather alert:</h3>
+            <p id="event-name"></p>
+            <p><span id="event-start"></span>/<span id="event-end"></span></p>
+            <p id="event-desc"></p>
+            <button id="exit-button">Close</button>
         </div>
     </main>
     <footer>
@@ -58,7 +114,7 @@
         <div>
             <p>Questions, comments?<br>Click <a href="contact.html">here</a> to contact us!</p>
             <button onclick="window.location.href='attribution.html';">Data Citation Page</button>
-            <p>&copy; <span class="year"></span></p>
+            <p>&copy; <span class="year"></span> Temple Inn & Suites</p>
             <p class="last-mod"></p>
         </div>
         <div class="social-media">
@@ -68,5 +124,6 @@
     </footer>
     <script src="js/scripts.js"></script>
     <script src="js/weatherapi.js"></script>
+    <script src="js/slideshow.js"></script>
 </body>
 </html>

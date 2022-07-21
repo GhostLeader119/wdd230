@@ -4,10 +4,12 @@ const weatherIcon = document.querySelector('#weather-icon');
 const windchill_loc = document.querySelector('#wind-chill');
 const windspeed_loc = document.querySelector('#wind-speed');
 const weathercondition_loc = document.querySelector('#wx-condition');
+const humidty_loc = document.querySelector('#humidity-loc');
+const weather_alert_div = document.querySelector('#weather-alert')
 
 
 
-const url_weather = 'https://api.openweathermap.org/data/2.5/weather?lat={38.984594}&lon={-77.094203}&appid=5106b42359082f0f0d14d61d1cf7f8f0&units=imperial' 
+const url_weather = 'https://api.openweathermap.org/data/2.5/weather?q=Denver,us&appid=5106b42359082f0f0d14d61d1cf7f8f0&units=imperial&alerts' 
 async function apiFetch() {
   try {
     const response = await fetch(url_weather);
@@ -34,6 +36,20 @@ function displayResults(weatherData) {
     let wind_speed = weatherData.wind.speed
 
     let tempature = weatherData.main.temp
+    let humidity = weatherData.main.humidity
+    humidty_loc.textContent = humidity
+    
+    //Alert center
+    let test_data = weatherData.alerts.event
+    console.log('LOG TEST');
+    console.log(`TEST DATA: ${test_data}`);
+    document.querySelector("event-name").textContent = weatherData.alerts.event
+    document.querySelector("event-start").textContent = weatherData.alerts.start
+    document.querySelector("event-end").textContent = weatherData.alerts.end
+    document.querySelector("event-desc").textContent = weatherData.alerts.description
+    if (test_data != '') {
+        document.getElementById("weather-alert").style.display = 'block';
+    }
 
     weathercondition_loc.textContent = weatherData.weather[0].description
     window.global_data = [wind_speed,tempature]
@@ -90,9 +106,12 @@ function convert_celsius(){
         windchill_F(tempature,wind_speed)
     }
 }
-
+function close_window(){
+    document.getElementById("weather-alert").style.display = 'none';
+}
 apiFetch();
 
 
 
 document.querySelector("#temprature-convert").addEventListener("click", convert_celsius);
+document.querySelector("#exit-button").addEventListener("click", close_window);

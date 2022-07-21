@@ -12,12 +12,12 @@
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
         <link rel="shortcut icon" href="images/favicon.ico">
-        <title>Document</title>
-        <meta name="description" content="United Valley Chamber's home page for BYU Idaho's WDD230 class">
+        <title>Reservations</title>
+        <meta name="description" content="Temple Inn & Suites's reservation page for BYU Idaho's WDD230 class">
     </head>
 <body>
     <header>
-        <img src="https://via.placeholder.com/150">
+        <img src="https://via.placeholder.com/150" alt="Temple Inn & Suites's logo">
         <nav id="expiriment-to-reset-nav">
             <button id="navBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primaryNav">
@@ -32,29 +32,35 @@
         </nav>
     </header>
     <main>
-        <form method="get" action="thankyou.html">
+        <form method="get" action="thankyou.html" id="reservation-form">
             <fieldset>
-                <legend>Core applicant information</legend>
+                <legend>Registrant's Information</legend>
                 <label>First name* <input type="text" name="fname" required></label>
                 <label>Last name* <input type="text" name="lname" required></label>
                 <label>Phone* <input type="tel" name="phone" placeholder="3006007782" required></label>
                 <label>Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
-                <label>Business Name* <input type="text" name="b-name" required></label>
-                <label>position <input type="text" name="b-position" minlength="7" pattern="[a-zA-Z0-9\s]+" title="Limited to letters, spaces and hyphens"></label>
-            </fieldset>
-            <fieldset class="btnholder">
-                <legend>Membership options</legend>
-                <label class="rbtn"><input type="radio" name="membership-package" value="bronze">Bronze</label>
-                <label class="rbtn"><input type="radio" name="membership-package" value="silver">Silver</label>
-                <label class="rbtn"><input type="radio" name="membership-package" value="gold">Gold</label>
-                <label class="rbtn"><input type="radio" name="membership-package" value="gold">NP</label>
+                <label>Home state/country* <input type="text" name="origin" required></label>
             </fieldset>
             <fieldset>
-                <label>Please leave a short description of your business:</label>
-                <textarea name="msg" maxlength="140" rows="5"></textarea>
+                <legend>Reservation information</legend>
+                <label>Location*</label>
+                <div class="radiob">
+                <label class="rbtn"><input type="radio" name="location" value="Rexburg">Rexburg, ID</label>
+                <label class="rbtn"><input type="radio" name="location" value="Palmyra">Palmyra, NY</label>
+                <label class="rbtn"><input type="radio" name="location" value="Logan">Logan, UT</label>
+                <label class="rbtn"><input type="radio" name="location" value="Denver">Denver, CO</label></div>
+                <label>Date of arrival* <input type="text" name="arrival" required></label>
+                <label>Length of stay* <input type="number" name="length-stay" required value="1" min="0" max="100"></label>
+                <label>Single Bed: <input type="number" name="type1" value="1" min="0" max="8"></label>
+                <label>Dual Beds: <input type="number" name="type2" value="1" min="0" max="8"></label>
+                <label>Single Bed Large: <input type="number" name="type3" value="1" min="0" max="8"></label>
+                
             </fieldset>
-            <input class="submitBtn" type="submit" value="Send my application">
-            <p class="hidden-elm">Time stamp revealed to demonstrate functionality: <span class="timestamp"></span></p>
+            <fieldset>
+                <legend>Any special accomodations/comments:</legend>
+                <textarea name="msg" maxlength="400" rows="5"></textarea>
+            </fieldset>
+            <input class="submitBtn" type="submit" value="Send my reservation">
         </form>
     </main>
     <footer>
@@ -72,7 +78,9 @@
         <div class="social-media">
             <a href="https://www.facebook.com/"><img src="images/317727_facebook_social_media_social_icon.png" alt="Facebook"></a>
             <a href="https://twitter.com/"><img src="images/3225183_app_logo_media_popular_social_icon.png" alt="Twitter"></a>
+            
         </div>
     </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

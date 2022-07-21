@@ -21,4 +21,9 @@
         border-radius: 5px 5px 5px 5px;
         padding: .2em;
     }
+    div#services-con {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .5em;
+    }
 }

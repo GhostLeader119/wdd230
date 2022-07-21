@@ -130,7 +130,6 @@ section {
     color: #26532B; 
     padding: .4em;
     margin: .1em;
-    /* color holder temp */
 }
 
 /* Reservations */
@@ -188,7 +187,7 @@ div#temple-info {
   width: auto;
   margin-top: -23px;
   padding: 17px;
-  color: grey;
+  color: black;
   font-weight: bold;
   font-size: 19px;
   transition: 0.4s ease;
@@ -321,6 +320,10 @@ form label input:required:valid {
     background-color: #DCD9D3;
     border: 2px solid #0B3954;
     margin: 5px;
+}
+img.nerf {
+    max-width: 600px;
+    height: auto;
 }
 
 /* Reception page */

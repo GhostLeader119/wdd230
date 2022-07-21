@@ -67,7 +67,6 @@ function printcard(temples) {
     // Set image
     console.log('TEST ME!');
     let testmat = temples.temple_image
-    console.log(testmat);
     picture.setAttribute('src', testmat);
     picture.setAttribute('alt', temples.name);
     picture.setAttribute('width', '250');
@@ -97,30 +96,23 @@ function printcard(temples) {
 
 
   function A3(){
-    console.log('FOUIND IT!');
     set_storage('a3a3')
   }
   function A8(){
-    console.log('FOUIND IT!');
     set_storage('a8a8')
   }
   function A5(){
-    console.log('FOUIND IT!');
     set_storage('a5a5')
   }
   function A9(){
-    console.log('FOUIND IT!');
     set_storage('a9a9')
   }
 
   function set_storage(address){
-    console.log('SET STORE ACTIVE!');
-    console.log(`Address at ${address}`);
+
     let input = 1
     let old_data = window.localStorage.getItem(address)
-    console.log(`old data ${old_data}`);
     old_data = parseFloat(old_data)
-    console.log(`old data ${old_data}`);
     if (old_data != '') {
       old_data += 1
       localStorage.setItem(address, old_data)
@@ -134,10 +126,3 @@ function printcard(temples) {
     let idLoc = '#' + address
     document.querySelector(idLoc).textContent = old_data
   }
-
-
-
-  // document.querySelector("#A3").addEventListener("click", clicked_a3);
-  // document.querySelector("#A8").addEventListener("click", clicked_a8);
-  // document.querySelector("#A5").addEventListener("click", clicked_a5);
-  // document.querySelector("#A9").addEventListener("click", clicked_a9);

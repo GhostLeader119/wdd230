@@ -26,4 +26,9 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: .5em;
     }
+    div#reception-con{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .3em;
+    }
 }

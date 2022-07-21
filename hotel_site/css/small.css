@@ -27,6 +27,10 @@ a.link-emb:hover{
     background-color: rgba(0, 0, 0, .3);
     color: white;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 
 /* Header */
@@ -179,7 +183,7 @@ div#temple-info {
 /* forward & Back buttons */
 .Back, .forward {
   cursor: pointer;
-  position: absolute;
+  /* position: absolute; */
   top: 48%;
   width: auto;
   margin-top: -23px;
@@ -259,22 +263,6 @@ div#temple-info {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Thank you page */
 
 #thank-you {
@@ -337,7 +325,7 @@ form label input:required:valid {
 
 /* Reception page */
 
-div#food-servlst li {
+div#food-servlst li,div#meeting-venue li {
     margin-bottom: 1em;
 }
 

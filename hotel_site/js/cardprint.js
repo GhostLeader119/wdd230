@@ -15,7 +15,7 @@ fetch(requestURL)
 
 function printcard(temples) {
 
-  
+  console.log(temples);
     let card = document.createElement('section');
     let name = document.createElement('h2');
     let picture = document.createElement('img'); // Not done yet
@@ -30,7 +30,7 @@ function printcard(temples) {
     let sessSchedule = document.createElement('p')
     let closureSchedule = document.createElement('ul')
     let closureSchedule_title = document.createElement('p')
-    let webid = document.createElement('p')
+    let webid = temples.webid
 
 
      let service_list_items = temples.temple_services
@@ -58,10 +58,18 @@ function printcard(temples) {
     history_title.textContent = 'History:'
     closureSchedule_title.textContent = 'Closure Schedule:'
 
+    //Button creation
+    let button_creator = document.createElement('div');
+    let pos2 = webid + webid
+    button_creator.innerHTML = `<button id="${webid}" onClick="${webid}()">Like <span id="${pos2}"></span></button>`
+
 
     // Set image
-    picture.setAttribute('src', temples.temple_image);
-    picture.setAttribute('alt', `temples.name`);
+    console.log('TEST ME!');
+    let testmat = temples.temple_image
+    console.log(testmat);
+    picture.setAttribute('src', testmat);
+    picture.setAttribute('alt', temples.name);
     picture.setAttribute('width', '250');
     picture.setAttribute('height', '250');
     picture.setAttribute('loading', 'lazy');
@@ -80,10 +88,56 @@ function printcard(temples) {
     card.appendChild(history);
     card.appendChild(closureSchedule_title);
     card.appendChild(closureSchedule);
+    card.appendChild(button_creator);
    
   
     document.querySelector('.temple-cards').appendChild(card);
+    display_storage(pos2)
   }
 
-  
 
+  function A3(){
+    console.log('FOUIND IT!');
+    set_storage('a3a3')
+  }
+  function A8(){
+    console.log('FOUIND IT!');
+    set_storage('a8a8')
+  }
+  function A5(){
+    console.log('FOUIND IT!');
+    set_storage('a5a5')
+  }
+  function A9(){
+    console.log('FOUIND IT!');
+    set_storage('a9a9')
+  }
+
+  function set_storage(address){
+    console.log('SET STORE ACTIVE!');
+    console.log(`Address at ${address}`);
+    let input = 1
+    let old_data = window.localStorage.getItem(address)
+    console.log(`old data ${old_data}`);
+    old_data = parseFloat(old_data)
+    console.log(`old data ${old_data}`);
+    if (old_data != '') {
+      old_data += 1
+      localStorage.setItem(address, old_data)
+    }
+    else {
+      localStorage.setItem(address, input)
+    }
+  }
+  function display_storage(address) {
+    let old_data = window.localStorage.getItem(address)
+    let idLoc = '#' + address
+    document.querySelector(idLoc).textContent = old_data
+  }
+
+
+
+  // document.querySelector("#A3").addEventListener("click", clicked_a3);
+  // document.querySelector("#A8").addEventListener("click", clicked_a8);
+  // document.querySelector("#A5").addEventListener("click", clicked_a5);
+  // document.querySelector("#A9").addEventListener("click", clicked_a9);
